@@ -34,7 +34,7 @@ nav{
 }
 .nav-lista li a::after{
     content: '';
-    background: #ff3d00;
+    background: #961d4e;
     width: 0%;
     height: 2px;
     position: absolute;
@@ -46,7 +46,7 @@ nav{
     width: 100%;
 }
 .botao-registrar{
-    background: #ff3d00;
+    background: #961d4e;
     color: #fff;
     padding: 10px 30px;
     border-radius: 3px;
@@ -70,7 +70,7 @@ nav{
 }
 
 .conteudo button{
-    background: #ff3d00;
+    background: #961d4e;
     color: #fff;
     padding: 15px 40px;
     border: none;
@@ -79,3 +79,64 @@ nav{
     cursor: pointer;
 }
 
+
+.div-card{
+    width: 400px;
+    height: 500px;
+    background-color: #C44E31;
+    border-radius: 10px;
+    float: left;
+    margin:5px;
+
+}
+
+.box-cards{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 80px;
+}
+
+.div-card-img img{
+    width: 100%;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div-card-descricao{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.div-card-comprar{
+    text-align: center;
+    background-color: #F4B942;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    padding-top: 7px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.div-card-comprar:hover{
+    background-color: #F8D48B;
+}
+
+.div-card-comprado{
+    background-color: #9A6A09;
+}
+
+.div-card-comprado:hover{
+    background-color: #9A6A09;
+}

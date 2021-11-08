@@ -104,6 +104,7 @@ nav{
     height: 30px;
     padding:5px;
     font: normal normal 20px poppins;
+    border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
     background-color: #961d4e;
@@ -118,14 +119,14 @@ nav{
 }
 
 .botton-product-added{
-    font: normal normal 17px poppins;
+    font: normal bold 16px poppins;
     text-transform: initial;
     background-color: whitesmoke;
     color:#961d4e;
 }
 
 .botton-product-added:hover{
-    font: normal normal 17px poppins;
+    font: normal bold 17px poppins;
     background-color: whitesmoke;
     color:#961d4e;
 }

@@ -1,4 +1,4 @@
-var listaProdutos = [[0, 'VODKA STOLICHNAYA', 'caneta.webp', false], [1, 'TEQUILA JOSÉ CUERVO', 'feijoes.jpeg', false], [2,'GIN TANQUERAY', 'tanqueray.jpeg', false]];
+var listaProdutos = [[0, 'R$ 85,90', 'VODKA STOLICHNAYA', 'caneta.webp', false], [1, 'R$ 99,90','TEQUILA JOSÉ CUERVO', 'feijoes.jpeg', false], [2, 'R$ 90,50','GIN TANQUERAY', 'tanqueray.jpeg', false]];
 
 var carrinho = [];
 
@@ -16,13 +16,14 @@ function montarCardProdutos(){
         var conteudo = "";
         conteudo += '<div class="div-card" >';
         conteudo += '<div class="div-card-img">';
-        conteudo += '<img src="img/' + listaProdutos[i][2] + '" />';
+        conteudo += '<img src="img/' + listaProdutos[i][3] + '" />';
         conteudo += '</div>';
         conteudo += '<div class="div-card-descricao">';
-        conteudo += listaProdutos[i][1];
+        conteudo += listaProdutos[i][2];
+        conteudo += '<br>' + '<div class="div-preco-main">' + listaProdutos[i][1] + '</div>';
         conteudo += '</div>';
 
-        if(listaProdutos[i][3] == false)
+        if(listaProdutos[i][4] == false)
         {
             conteudo += '<div class="div-card-comprar"  onclick="comprar(' + listaProdutos[i][0] + ')"  >';
             conteudo += 'Comprar';
@@ -45,7 +46,7 @@ function montarCardProdutos(){
 
 function comprar(id){
 
-    listaProdutos[id][3] = true;
+    listaProdutos[id][4] = true;
     
     carrinho.push(listaProdutos[id]);
 

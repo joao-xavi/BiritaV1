@@ -51,7 +51,7 @@ nav{
 }
 
 #divProducts{
-    background-color: rgb(54, 0, 0);
+    
     width: 100%;
     margin-right: auto;
     margin-left: auto;   
@@ -88,16 +88,15 @@ nav{
     text-transform: capitalize;
     border-radius: 5px;
     color: white;
-    text-shadow: rgb(54, 0, 0) 2px 2px 3px;
+    
 }
 
 .text-product-price{
     font: normal bold 15px poppins, sans-serif;
     text-align: center;
     text-transform: capitalize;
-    
     color: white;
-    text-shadow: rgb(54, 0, 0) 2px 2px 3px;
+    
 }
 
 .botton-product-add{
@@ -105,28 +104,29 @@ nav{
     height: 30px;
     padding:5px;
     font: normal normal 20px poppins;
+    border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
-    background-color: whitesmoke;
-    color:black;      
+    background-color: #961d4e;
+    color:white;      
     cursor: pointer;   
 }
 
 .botton-product-add:hover{
-    background-color: rgb(95, 29, 29);
+    background-color: white;
     font: normal bold 23px poppins;
-    color: black;
+    color: #961d4e;
 }
 
 .botton-product-added{
-    font: normal normal 20px poppins;
+    font: normal bold 16px poppins;
     text-transform: initial;
-    background-color: rgb(95, 29, 29);
-    color:rgb(0, 0, 0);
+    background-color: white;
+    color:#961d4e;
 }
 
 .botton-product-added:hover{
-    font: normal normal 20px poppins;
-    background-color: rgb(95, 29, 29);
-    color:whitesmoke;
+    font: normal bold 16px poppins;
+    background-color: white;
+    color:#961d4e;
 }

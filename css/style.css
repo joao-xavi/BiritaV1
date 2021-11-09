@@ -93,6 +93,7 @@ nav{
     background-color: #fff;
     border-radius: 10px;
     float: left;
+    text-align: center;
     margin:5px;
 
 }
@@ -109,7 +110,6 @@ nav{
 
 .div-card-img img{
     width: fit-content;
-    align-items: center;
     height: 450px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -118,13 +118,11 @@ nav{
 .div-card-descricao{
     width: 100%;
     font-size: 23px;
-    text-align: center;
     height: 77px;
     padding-top: 5px;
 }
 
 .div-card-comprar{
-    text-align: center;
     background-color:rgb(155, 24, 24);
     color: white;
     height: 50px;

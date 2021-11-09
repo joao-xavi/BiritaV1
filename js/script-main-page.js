@@ -1,4 +1,4 @@
-var listaProdutos = [[0, 'R$ 85,90', 'VODKA STOLICHNAYA', 'vodkastoli.png', false], [1, 'R$ 99,90','TEQUILA JOSÉ CUERVO', 'josecuervo.png', false], [2, 'R$ 90,50','GIN TANQUERAY', 'tanqueray.png', false]];
+var listaProdutos = [[0, 'R$ 85,90', 'VODKA STOLICHNAYA', 'stolichnaya.png', false], [1, 'R$ 99,90','TEQUILA JOSÉ CUERVO', 'josecuervo.png', false], [2, 'R$ 90,50','GIN TANQUERAY', 'tanqueray.png', false]];
 
 var carrinho = [];
 

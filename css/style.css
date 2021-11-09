@@ -123,7 +123,7 @@ nav{
 }
 
 .div-card-comprar{
-    background-color:rgb(155, 24, 24);
+    background: #961d4e;
     color: white;
     height: 50px;
     font-size: 30px;
@@ -134,15 +134,17 @@ nav{
 }
 
 .div-card-comprar:hover{
-    background-color: #f82525;
+    background-color: #961d4e;
+    color: black;
 }
 
 .div-card-comprado{
-    background-color: #eb5252;
+    background-color: #961d4e;
 }
 
 .div-card-comprado:hover{
-    background-color: #fa9999;
+    background-color: #961d4e;
+    color: black;
 }
 
 .div-preco-main{
@@ -205,6 +207,7 @@ nav{
     background-color: #b8b8b89a;
     padding-bottom:2%;
 }
+
 .mais-produtos-button button{
     background: #961d4e;
     color: #fff;
@@ -216,6 +219,10 @@ nav{
     text-align: center;
     margin: 0 auto;
     display: block;
+}
+
+.mais-produtos-button a{
+    text-decoration: none;
 }
 
 /* #################### VIDEO DEMO ####################  */ 

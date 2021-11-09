@@ -47,13 +47,13 @@ function buildCards(){
         if(productsList[i][4] == false)
         {
             conteudo += '<div class="botton-product-add"  onclick="buy(' + productsList[i][0] + ')"  >';
-            conteudo += 'Add to cart';
+            conteudo += 'Comprar';
             conteudo += '</div>';
         }
         else
         {
             conteudo += '<div class="botton-product-add botton-product-added"   >';
-            conteudo += 'Added to your cart!';
+            conteudo += 'Adicionado ao seu carrinho!';
             conteudo += '</div>';
         }
         

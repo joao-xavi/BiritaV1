@@ -93,6 +93,7 @@ nav{
     background-color: #fff;
     border-radius: 10px;
     float: left;
+    text-align: center;
     margin:5px;
 
 }
@@ -108,7 +109,7 @@ nav{
 }
 
 .div-card-img img{
-    width: 100%;
+    width: fit-content;
     height: 450px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -117,14 +118,12 @@ nav{
 .div-card-descricao{
     width: 100%;
     font-size: 23px;
-    text-align: center;
     height: 77px;
     padding-top: 5px;
 }
 
 .div-card-comprar{
-    text-align: center;
-    background-color:rgb(155, 24, 24);
+    background: #961d4e;
     color: white;
     height: 50px;
     font-size: 30px;
@@ -135,15 +134,17 @@ nav{
 }
 
 .div-card-comprar:hover{
-    background-color: #f82525;
+    background-color: #961d4e;
+    color: black;
 }
 
 .div-card-comprado{
-    background-color: #eb5252;
+    background-color: #961d4e;
 }
 
 .div-card-comprado:hover{
-    background-color: #fa9999;
+    background-color: #961d4e;
+    color: black;
 }
 
 .div-preco-main{
@@ -206,6 +207,7 @@ nav{
     background-color: #b8b8b89a;
     padding-bottom:2%;
 }
+
 .mais-produtos-button button{
     background: #961d4e;
     color: #fff;
@@ -217,6 +219,10 @@ nav{
     text-align: center;
     margin: 0 auto;
     display: block;
+}
+
+.mais-produtos-button a{
+    text-decoration: none;
 }
 
 /* #################### VIDEO DEMO ####################  */ 

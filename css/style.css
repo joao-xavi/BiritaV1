@@ -188,42 +188,7 @@ nav{
     font-weight: 600;
 }
 
-/* #################### MAIS VENDIDOS + SEPARADOR E BOTÃO MAIS PRODUTOS ####################  */ 
 
-.div-mais-vendidos {
-    padding-top: 45px;
-    text-align:left;
-    padding-left: 20%;
-    padding-bottom: 45px;
-    background-color: #b8b8b89a;
-    font-size: xx-large;
-    font-weight: 700;
-}
-
-.separador-solido{
-    border: 15px solid #961d4d9a;
-}
-.mais-produtos-button{
-    background-color: #b8b8b89a;
-    padding-bottom:2%;
-}
-
-.mais-produtos-button button{
-    background: #961d4e;
-    color: #fff;
-    padding: 15px 40px;
-    border: none;
-    font-size: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-}
-
-.mais-produtos-button a{
-    text-decoration: none;
-}
 
 /* #################### VIDEO DEMO ####################  */ 
 

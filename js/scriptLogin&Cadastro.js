@@ -52,7 +52,8 @@ function cadastro(){
                     }else {
                         var list = [usuario]
                         window.localStorage.setItem("usuarios", JSON.stringify(list));
-                    }    
+                    } 
+                    window.location.href = "index.html"   
                 }
             } else {
                 alert("Deve conter um email válido, por exemplo: exemplo@exemplo.com")

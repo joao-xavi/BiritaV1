@@ -15,12 +15,12 @@ function login(){
             }
         }
         if(usuarioEncontrado){
-            alert("Login realizado com sucesso")
+            alertaModal("Login realizado com sucesso")
         }else{
-            alert("Login incorreto tente novamente")
+            alertaModal("Login incorreto tente novamente")
         }
     }else{
-        alert("Login incorreto tente novamente")
+        alertaModal("Login incorreto tente novamente")
     }
 
     var email = document.getElementById("email").value = ""
@@ -39,11 +39,11 @@ function cadastro(){
         if (validaSenha(senha)) {
             if (validaEmail(email)){
                 if(senha != senhaConfirm) {
-                    alert("As senhas não coincidem")
+                    alertaModal("As senhas não coincidem")
                     var senha = document.getElementById("senha").value = ""
                     var senhaConfirm = document.getElementById("confirmSenha").value = ""
                 } else {
-                    alert("Cadastro realizado com sucesso!")
+                    alertaModal("Cadastro realizado com sucesso!")
                     var usersList = JSON.parse(localStorage.getItem("usuarios"))
                     var usuario = [ email, senha, nome ]
                     if (usersList != null) {
@@ -52,17 +52,24 @@ function cadastro(){
                     }else {
                         var list = [usuario]
                         window.localStorage.setItem("usuarios", JSON.stringify(list));
-                    }    
+                    }
+                    window.location.href = "index.html";    
                 }
             } else {
-                alert("Deve conter um email válido, por exemplo: exemplo@exemplo.com")
+                alertaModal("Deve conter um email válido, por exemplo: exemplo@exemplo.com")
             }
         } else {
-            alert("A senha deve conter no mínimo 8 caracteres, sendo obrigatório, no mínimo, um número, uma letra maiúscula e minúscula e um caracter especial!")
+            alertaModal("A senha deve conter no mínimo 8 caracteres, sendo obrigatório, no mínimo, um número, uma letra maiúscula e minúscula e um caracter especial!")
         }        
     } else {
-        alert("Usuário e senha não podem ficar em branco")
+        alertaModal("Email e senha não podem ser nulos")
     }
+}
+
+function alertaModal (texto) {
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+        document.getElementById("modalBody").innerHTML = '<h7>' + texto;
+        myModal.show()
 }
 
 function validaSenha (senha){

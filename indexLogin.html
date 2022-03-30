@@ -27,21 +27,29 @@
             <div class="input-container">		
                 <input type="password" id="senha"/>
                 <label>Senha</label>
-                <a href="indexRecuperaSenha.html" id="forgot-pass">Esqueceu sua senha?</a>
+                <a id="forgot-pass" onclick="enviarEmail()">Esqueceu sua senha?</a>
             </div>
                 <button type="button" class="btn" onclick="login()">Entrar</button>
             </form>	
         </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="senhaRecuperacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
                 </div>
-                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-body" id="senhaRecuperacao">
+                    <h7> Insira o email para enviarmos o código para mudança de senha</h7>
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Insira seu email" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Email</label>
+                      </div>
+                </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href = 'indexRecuperaSenha.html';">Enviar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
               </div>
             </div>

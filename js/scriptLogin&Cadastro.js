@@ -93,6 +93,11 @@ function recuperaSenha(){
 
 }
 
+function enviarEmail() {
+    var myModal = new bootstrap.Modal(document.getElementById('senhaRecuperacao'))
+    myModal.show()
+}
+
 function alertaModal (texto) {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
         document.getElementById("modalBody").innerHTML = '<h7>' + texto;

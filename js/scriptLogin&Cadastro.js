@@ -31,11 +31,10 @@ function cadastro(){
     var email = document.getElementById("email").value
     var nome = document.getElementById("nome").value
     var senha = document.getElementById("senha").value
-
     var senhaConfirm = document.getElementById("confirmSenha").value
 
     
-    if(nome != '' && senha != '') {
+    if(nome != '' && senha != '' && email != '') {
         if (validaSenha(senha)) {
             if (validaEmail(email)){
                 if(senha != senhaConfirm) {
@@ -66,6 +65,34 @@ function cadastro(){
     }
 }
 
+function recuperaSenha(){
+    var codigo = document.getElementById("codigo").value;
+    var senha = document.getElementById("senha").value
+    var senhaConfirm = document.getElementById("confirmSenha").value
+
+    if (codigo != '') {
+        if (senha != '') {
+            if (validaSenha(senha)){
+                if (senha != senhaConfirm){
+                    alertaModal("As senhas não coicidem!")
+                    var senha = document.getElementById("senha").value = ""
+                    var senhaConfirm = document.getElementById("confirmSenha").value = ""
+                } else {
+                    alertaModal("Senha alterada com sucesso!")
+                }
+                window.location.href = "indexLogin.html"
+            } else {
+                alertaModal("A senha deve conter no mínimo 8 caracteres, sendo obrigatório, no mínimo, um número, uma letra maiúscula e minúscula e um caracter especial!") 
+            }
+        } else {
+            alertaModal("A senha não pode ser nula!")
+        }
+    } else {
+        alertaModal("Por favor, digite o código enviado para o email cadastrado!")
+    }
+
+}
+
 function alertaModal (texto) {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
         document.getElementById("modalBody").innerHTML = '<h7>' + texto;
@@ -83,3 +110,4 @@ function validaEmail (email){
 
     return testaEmail.test(email)
 }
+

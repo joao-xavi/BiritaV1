@@ -36,7 +36,7 @@ nav{
 }
 .nav-lista li a::after{
     content: '';
-    background: #FF5F26;
+    background: #2D9A0B;
     width: 0%;
     height: 2px;
     position: absolute;
@@ -90,8 +90,9 @@ nav{
 .input-container input:focus{ 
  border:none;	
  outline:none;
- border-bottom:1px solid #f98c25;	
+ border-bottom:1px solid #2D9A0B;	
 }
+
 .btn{
 	color:#FEF8DD;
 	background-color:#FF5F26;
@@ -105,6 +106,14 @@ nav{
 	cursor:pointer;
 	position:relative;
 }
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+    color: #3996FF;
+    text-decoration: underline;
+    font-size: 10px;
+  }
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
